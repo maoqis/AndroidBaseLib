@@ -1,0 +1,33 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+
+        mavenCentral()
+        google()
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:${ANDROID_GRADLE_VERSION}"
+
+    }
+}
+
+
+allprojects {
+    repositories {
+
+        mavenCentral()
+
+        google()
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    VERSION_NAME = "${LIB_VERSION}-SNAPSHOT"
+}
+

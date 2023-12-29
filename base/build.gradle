@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+//apply from: "./../release-bintray.gradle"
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+}
+
+android {
+    namespace 'com.github.maoqis.android.base'
+    compileSdkVersion COMPILE_SDK_VERSION as int
+    buildToolsVersion BUILD_TOOLS_VERSION as String
+
+    defaultConfig {
+        minSdkVersion MIN_SDK_VERSION as int
+        targetSdkVersion TARGET_SDK_VERSION as int
+        consumerProguardFiles "proguard-rules.pro"
+
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lint {
+        abortOnError false
+    }
+
+}
+
+
