@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-//apply from: "./../release-bintray.gradle"
+apply from: "./../release-bintray.gradle"
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
 }
