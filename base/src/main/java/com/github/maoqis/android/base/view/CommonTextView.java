@@ -6,8 +6,8 @@ import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 
-public class CommonClickView extends androidx.appcompat.widget.AppCompatButton {
-    public CommonClickView(Context context, @Nullable AttributeSet attrs) {
+public class CommonTextView extends androidx.appcompat.widget.AppCompatButton {
+    public CommonTextView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         setPadding(0, 9, 0, 9);
     }
